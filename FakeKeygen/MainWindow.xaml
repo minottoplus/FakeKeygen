@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FakeKeygen"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        ResizeMode="NoResize"
+        Title="Reaper Keygen" Height="210 " Width="345 ">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Image Source="sozai\header-small.png" Grid.Row="0"/>
+        <TextBox Grid.Row="1" Margin="4" Text="" IsReadOnly="True" x:Name="KeyTextBox"/>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="4">
+            <Button Padding="10,0" Margin="10,0" x:Name="GenButton" Click="GenButton_Click" Content="Generate"/>
+            <Button Padding="10,0" Content="Exit" x:Name="ExitButton" Click="ExitButton_Click"/>
+        </StackPanel>
     </Grid>
 </Window>
+ 
