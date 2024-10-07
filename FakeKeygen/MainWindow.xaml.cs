@@ -47,6 +47,7 @@ namespace FakeKeygen
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show("Do not crack you aho");
             this.Close();
         }
     }
