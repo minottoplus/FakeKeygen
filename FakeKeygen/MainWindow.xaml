@@ -13,7 +13,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Image Source="sozai\header-small.png" Grid.Row="0"/>
+        <Image Source="sozai\header-small.png" Grid.Row="0" x:Name="header"/>
         <TextBox Grid.Row="1" Margin="4" Text="" IsReadOnly="True" x:Name="KeyTextBox"/>
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="4">
             <Button Padding="10,0" Margin="10,0" x:Name="GenButton" Click="GenButton_Click" Content="Generate"/>

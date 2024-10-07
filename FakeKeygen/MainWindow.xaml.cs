@@ -9,6 +9,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace FakeKeygen
 {
@@ -29,6 +30,7 @@ namespace FakeKeygen
             var shuffledList = keyList.OrderBy(a => Guid.NewGuid()).ToList();
             string key = String.Join("-", shuffledList);
             KeyTextBox.Text = key;
+
 
         }
 
